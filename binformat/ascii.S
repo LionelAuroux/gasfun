@@ -2,6 +2,7 @@
     .set v, \from
     .set max, (\to - \from) + 1
     .rept max
+._\\v:
         .byte v
         .set v, v + 1
     .endr

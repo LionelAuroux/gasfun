@@ -1,8 +1,9 @@
 #include "intel.h"
 INTEL_BEGIN
-.code16gcc
+.local msg
+.code32
 .balign 0x100
-    mov dx, msg
+    mov edx, msg
     //.byte 0xba, 0x0b, 0x01
     mov ah, 9
     int 0x21
